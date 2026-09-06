@@ -26,6 +26,7 @@ Other fixes and improvements:
 - Balancing: Slightly reduced the base encounter difficulty of wing-end combat rooms in the Temple of Styx.
 - Balancing: Blocked a number of additional Elite perks from certain enemy types.
 - Balancing: Reworked "Lament of Orpheus" to no longer require defeating the enemy that originally damaged you to be able to trigger it again, and also be able to freeze enemies that are currently on cooldown from being frozen normally.
+- Fixed: When entering a room, enemies can spawn very close to the entrance, which can cause unfair situations where enemies attack before you gain control.
 - Fixed: The projectiles created by the Spreaders in Asphodel, and the small projectiles created by the Splitters in Elysium have the Hades II graphic instead of the Hades graphic.
 - Fixed: If Melinoë exits "Unseen Ire" while the Bone Hydra performs the dart attack, the game may crash.
 - Fixed: Theseus immediately snaps to look at Melinoë after his dialogue completes instead of gradually turning.
