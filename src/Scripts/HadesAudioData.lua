@@ -6858,5 +6858,41 @@ mod.HeroVoiceLines = mod.HeroVoiceLines or {
 		{ Cue = "/VO/MelinoeField_1063", Text = "Should try an incantation back home..." },
 		{ Cue = "/VO/MelinoeField_1061", Text = "I'll have to use the cauldron first." },
 	},
+	-- #region Theseus Wrath Reaction
+	TheseusWrathReactionVoiceLines_F = {
+		RandomRemaining = true,
+		BreakIfPlayed = true,
+		PreLineWait = 0.5,
+		SuccessiveChanceToPlay = 0.33,
+		UsePlayerSource = true,
+		PlayOnceFromTableThisRun = true,
+
+		{ Cue = "/VO/MelinoeField_0535", Text = "Wha...?",       PlayFirst = true },
+		{ Cue = "/VO/MelinoeField_0536", Text = "What?!" },
+		{ Cue = "/VO/MelinoeField_1470", Text = "Oh, come on..." },
+		{ Cue = "/VO/MelinoeField_1472", Text = "Blood and..." },
+		{ Cue = "/VO/MelinoeField_1473", Text = "{#Emph}Augh..." },
+		{ Cue = "/VO/Melinoe_1956",      Text = "Damn it!" },
+		{ Cue = "/VO/Melinoe_1957",      Text = "Blood and...!" },
+		{ Cue = "/VO/MelinoeField_3286", Text = "Here we go..." },
+	},
+	TheseusWrathReactionVoiceLines_M = {
+		RandomRemaining = true,
+		BreakIfPlayed = true,
+		PreLineWait = 0.5,
+		SuccessiveChanceToPlay = 0.33,
+		UsePlayerSource = true,
+		PlayOnceFromTableThisRun = true,
+
+		{ Cue = "/VO/MelinoeField_0535", Text = "Wha...?",       PlayFirst = true },
+		{ Cue = "/VO/MelinoeField_0536", Text = "What?!" },
+		{ Cue = "/VO/MelinoeField_1470", Text = "Oh, come on..." },
+		{ Cue = "/VO/MelinoeField_1472", Text = "Blood and..." },
+		{ Cue = "/VO/MelinoeField_1473", Text = "{#Emph}Augh..." },
+		{ Cue = "/VO/Melinoe_1956",      Text = "Damn it!" },
+		{ Cue = "/VO/Melinoe_1957",      Text = "Blood and...!" },
+		{ Cue = "/VO/MelinoeField_3286", Text = "Here we go..." },
+	},
+	-- #endregion
 	-- #endregion
 }

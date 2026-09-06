@@ -6,12 +6,14 @@
 ### Patch Highlights:
 - You may now naturally encounter Artemis and Athena in Zagreus' Journey, and they will use their dialogues from the first game when you speak to one of them.
 - Picking up boons from Aphrodite, Ares, Chaos, Demeter, Hermes, Poseidon or Zeus while in a Zagreus' Journey run will now use their respective dialogues and advance their storylines from the first game.
-- Picking up a boon from Hermes while in a Zagreus' Journey run may now have him deliver a message from the first game's Dionysus to you (as Dionysus cannot be encountered during Zagreus' Journey runs), allowing you to experience his storyline.
-- Added all resources that can be found during Zagreus' Journey runs to the Wretched Broker to allow trading them for the equivalent resources from Hades II (they will show after completing any new run).
+- Theseus may now call upon the aid of Apollo, Hestia, Hera and Hephaestus.
 - Balancing: Slightly reduced health and armour of non-boss enemies in all biomes.
 - Fixed: Goddess Mode does not reduce boss health. Enabling it will now reduce boss health by about 25% of the difference between the health they had in Hades and the health they have with Goddess Mode disabled.
 
 Other fixes and improvements:
+- Melinoë will now react to Theseus calling upon a God's Aid.
+- Picking up a boon from Hermes while in a Zagreus' Journey run may now have him deliver a message from the first game's Dionysus to you (as Dionysus cannot be encountered during Zagreus' Journey runs), allowing you to experience his storyline.
+- Added all resources that can be found during Zagreus' Journey runs to the Wretched Broker to allow trading them for the equivalent resources from Hades II (they will show after completing any new run).
 - Added new speedrunning settings to disable the Barge of Death, Asterius and Tiny Vermin miniboss encounters, either all at once or individually.
 - Added an on-screen indicator that is shown while any of the speedrunning settings are enabled.
 - Added a new Minor Prophecy unlocked by talking to Poseidon in the Nightmare Realm.

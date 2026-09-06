@@ -410,6 +410,177 @@ local weaponReplacements = {
 		InheritFrom = { "FlurrySpawnerWeapon" },
 	},
 	-- #endregion
+	-- #region Theseus
+	TheseusApolloUpgradeWrath = {
+		InheritFrom = { "TheseusAthenaUpgradeWrath" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusApolloBolt",
+			FireTicks = 30,
+			FireCooldown = 0.15,
+			WrathVoiceLines = {
+				Queue = "Interrupt",
+				[1] = game.GlobalVoiceLines.TheseusWrathActivationVoiceLines,
+				[2] = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_M,
+			},
+		},
+	},
+	TheseusApolloUpgradePassive = {
+		InheritFrom = { "TheseusAphroditeUpgradePassive" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusApolloBoltPassive",
+			FireInterval = 3.0,
+			FireTicks = 1,
+			FireCooldown = 0.1,
+			AttackSlotsPerTick = 19,
+			AttackSlotInterval = 0,
+			-- Two simultaneous half-circles starting from the top and bottom, with a single centered projectile firing halfway through the attack
+			AttackSlots = {
+				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 112.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 292.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 135,   OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 315,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 157.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 337.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 180,   OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 0,     OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 0,     OffsetDistance = 0,   OffsetScaleY = 0.48, AnchorAngleOffset = 0, PauseDuration = 0.12 },
+				{ Angle = 202.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 22.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 225,   OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 45,    OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 247.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 67.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
+			},
+		},
+	},
+	TheseusHeraUpgradeWrath = {
+		InheritFrom = { "TheseusAthenaUpgradeWrath" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHeraBolt",
+			FireFromTarget = true,
+			Spread = 360,
+			FireTicks = 18,
+			FireCooldown = 0.25,
+			WrathVoiceLines = {
+				Queue = "Interrupt",
+				[1] = game.GlobalVoiceLines.TheseusWrathActivationVoiceLines,
+				[2] = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_F,
+			},
+		},
+	},
+	TheseusHeraUpgradePassive = {
+		InheritFrom = { "TheseusAresUpgradePassive" },
+		AIData = {
+			-- Anchored to the map points and angled randomly, all detonating at once
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHeraBoltPassive",
+			FireFromTarget = true,
+			Spread = 360,
+			FireTicks = 1,
+			FireCooldown = 0.1,
+			FireInterval = 6.0,
+			AttackSlotsPerTickMin = 7,
+			AttackSlotsPerTickMax = 7,
+		},
+	},
+	ModsNikkelMHadesBiomes_DevotionHestia = {
+		InheritFrom = { "DevotionHestia" },
+		AIData = {
+			-- Custom projectile to spawn a lava puddle that disappears earlier
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHestiaBall",
+		},
+	},
+	TheseusHestiaUpgradeWrath = {
+		InheritFrom = { "TheseusAthenaUpgradeWrath" },
+		AIData = {
+			NoProjectile = true,
+			-- Only controls how long Theseus keeps the call animation, since we also have NoProjectile = true
+			FireTicks = 6,
+			-- Spawn three Hestia devotion balls, one of which tracks the player as in devotion encounters
+			-- The other two bounce semi-randomly
+			ModsNikkelMHadesBiomesSpawnUnits = {
+				"ModsNikkelMHadesBiomes_HestiaDevotionTracker",
+				"ModsNikkelMHadesBiomes_HestiaDevotionWanderer",
+				"ModsNikkelMHadesBiomes_HestiaDevotionWanderer",
+			},
+			WrathVoiceLines = {
+				Queue = "Interrupt",
+				[1] = game.GlobalVoiceLines.TheseusWrathActivationVoiceLines,
+				[2] = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_F,
+			},
+		},
+	},
+	-- No passive, only the three balls that are spawned initially
+	TheseusHestiaUpgradePassive = {
+		AIData = {
+			ModsNikkelMHadesBiomesSpawnUnits = {},
+		},
+	},
+	TheseusHephaestusUpgradeWrath = {
+		InheritFrom = { "TheseusAthenaUpgradeWrath" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHephaestusSlam",
+			FireTicks = 14,
+			FireCooldown = 0.25,
+			CreateOwnTargetFromOriginalTarget = true,
+			UseTargetAngle = true,
+			-- To spawn in front of the player in current walking direction
+			TargetOffsetDistance = 300,
+			WrathVoiceLines = {
+				Queue = "Interrupt",
+				[1] = game.GlobalVoiceLines.TheseusWrathActivationVoiceLines,
+				[2] = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_M,
+			},
+		},
+	},
+	TheseusHephaestusUpgradePassive = {
+		InheritFrom = { "TheseusAphroditeUpgradePassive" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHephaestusSlamPassive",
+			FireTicks = 1,
+			FireCooldown = 0.1,
+			FireInterval = 7.0,
+			AttackSlotsPerTick = 28,
+			AttackSlotInterval = 0,
+			-- Three rings, starting from the outer edge of the arena and moving inward
+			AttackSlots = {
+				{ Angle = 0,     OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 25.7,  OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 51.4,  OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 77.1,  OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 102.9, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 128.6, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 154.3, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 180,   OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 205.7, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 231.4, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 257.1, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 282.9, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 308.6, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 334.3, OffsetDistance = 1400, OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0, PauseDuration = 0.6 },
+
+				{ Angle = 20,    OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 60,    OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 100,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 140,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 180,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 220,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 260,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 300,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 340,   OffsetDistance = 900,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0, PauseDuration = 0.6 },
+
+				{ Angle = 36,    OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 108,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 180,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 252,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+				{ Angle = 324,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
+			},
+		},
+	},
+	-- #endregion
 	-- #endregion
 
 	-- #region STYX
@@ -1585,6 +1756,21 @@ local weaponModifications = {
 		FireTicks = mod.NilValue,
 		FireCooldown = mod.NilValue,
 		FireInterval = mod.NilValue,
+	},
+	TheseusAthenaUpgradeWrath = {
+		AIData = {
+			DeepInheritance = true,
+		},
+	},
+	TheseusAphroditeUpgradePassive = {
+		AIData = {
+			DeepInheritance = true,
+		},
+	},
+	TheseusAresUpgradePassive = {
+		AIData = {
+			DeepInheritance = true,
+		},
 	},
 	-- Combo attacks require TheseusAboutFraternalBonds06_A/B to have run, which requires PersephoneFirstMeeting at the root
 	MinotaurTheseusSlam_Theseus = {

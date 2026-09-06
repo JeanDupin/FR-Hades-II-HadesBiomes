@@ -48,6 +48,14 @@ local addProjectiles = {
 	ThanatosDeathCurseAoE = {
 		OnHitFunctionNames = { _PLUGIN.guid .. "." .. "CurseHealthBar" },
 	},
+	-- #region Theseus
+	ModsNikkelMHadesBiomes_TheseusApolloBolt = game.DeepCopyTable(game.ProjectileData.DevotionApollo),
+	ModsNikkelMHadesBiomes_TheseusApolloBoltPassive = game.DeepCopyTable(game.ProjectileData.DevotionApollo),
+	ModsNikkelMHadesBiomes_TheseusHeraBolt = game.DeepCopyTable(game.ProjectileData.DevotionHera),
+	ModsNikkelMHadesBiomes_TheseusHeraBoltPassive = game.DeepCopyTable(game.ProjectileData.DevotionHera),
+	ModsNikkelMHadesBiomes_TheseusHestiaBall = game.DeepCopyTable(game.ProjectileData.DevotionHestia),
+	ModsNikkelMHadesBiomes_TheseusHephaestusSlam = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),	ModsNikkelMHadesBiomes_TheseusHephaestusSlamPassive = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),
+	-- #endregion
 }
 
 for projectileName, projectileData in pairs(addProjectiles) do

@@ -480,6 +480,11 @@ game.HeroVoiceLines.ModsNikkelMHadesBiomes_TrophyUnlockedVoiceLines = mod.HeroVo
 
 game.HeroVoiceLines.ModsNikkelMHadesBiomes_GiftRackLockedVoiceLines = mod.HeroVoiceLines
 		.ModsNikkelMHadesBiomes_GiftRackLockedVoiceLines
+
+game.HeroVoiceLines.TheseusWrathReactionVoiceLines_M = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_M or
+		mod.HeroVoiceLines.TheseusWrathReactionVoiceLines_M
+game.HeroVoiceLines.TheseusWrathReactionVoiceLines_F = game.HeroVoiceLines.TheseusWrathReactionVoiceLines_F or
+		mod.HeroVoiceLines.TheseusWrathReactionVoiceLines_F
 -- #endregion
 
 -- #region Chaos Gate voiceline adjustments for Orpheus Chaos boon (free entry)
