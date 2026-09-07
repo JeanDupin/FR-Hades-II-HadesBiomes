@@ -31,7 +31,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_FanPoster_Theseus",
 		Name = {
 			en = "Wall-Scroll, Theseus",
-			fr = "Bannière, Thésée",
+			fr = "Affiche de Thésée",
 		},
 		Description = {
 			en =
@@ -84,7 +84,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_FanPoster_Aphrodite",
 		Name = {
 			en = "Wall-Scroll, Aphrodite",
-			fr = "Bannière, Aphrodite",
+			fr = "Affiche d'Aphrodite",
 		},
 		Description = {
 			en =
@@ -124,7 +124,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentTable_Hellish",
 		Name = {
 			en = "Table, Hellish",
-			fr = "Table, Infernale",
+			fr = "Table Infernale",
 		},
 		Description = {
 			en =
@@ -159,7 +159,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentTable_Serpentine",
 		Name = {
 			en = "Table, Serpentine",
-			fr = "Table, Serpentine",
+			fr = "Table Serpentine",
 		},
 		Description = {
 			en =
@@ -196,7 +196,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentCandle_Tartarus",
 		Name = {
 			en = "Candle, Tartarus",
-			fr = "Bougie, Tartare",
+			fr = "Bougie Tartarienne",
 		},
 		Description = {
 			en =
@@ -231,7 +231,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentCandle_Elysian",
 		Name = {
 			en = "Candle, Elysian",
-			fr = "Bougie, Élyséenne",
+			fr = "Bougie Élyséenne",
 		},
 		Description = {
 			en =
@@ -279,7 +279,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentBlanket_Chthonic",
 		Name = {
 			en = "Bedding, Chthonic",
-			fr = "Literie, Chthonienne",
+			fr = "Couverture Chthonienne",
 		},
 		Description = {
 			en =
@@ -319,7 +319,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentBlanket_Infernal",
 		Name = {
 			en = "Bedding, Infernal",
-			fr = "Literie, Infernale",
+			fr = "Couverture Infernale",
 		},
 		Description = {
 			en =
@@ -359,7 +359,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentBlanket_Olympic",
 		Name = {
 			en = "Bedding, Olympic",
-			fr = "Literie, Olympienne",
+			fr = "Couverture Olympienne",
 		},
 		Description = {
 			en =
@@ -399,7 +399,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentBlanket_Chariot",
 		Name = {
 			en = "Bedding, Racer",
-			fr = "Literie, Char",
+			fr = "Couverture Char",
 		},
 		Description = {
 			en =
@@ -464,7 +464,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentShelf_Brooding",
 		Name = {
 			en = "Shelving, Brooding",
-			fr = "Étagères, Sombres",
+			fr = "Étagère Sombre",
 		},
 		Description = {
 			en =
@@ -503,7 +503,7 @@ local tentCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TentShelf_Royal",
 		Name = {
 			en = "Shelving, Royal",
-			fr = "Étagères, Royales",
+			fr = "Étagère Royale",
 		},
 		Description = {
 			en =
@@ -560,7 +560,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Banner_Infernal",
 		Name = {
 			en = "Banner, Infernal",
-			fr = "Bannière, Infernale",
+			fr = "Étendard Infernal",
 		},
 		Description = {
 			en =
@@ -602,7 +602,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Banner_Divine",
 		Name = {
 			en = "Banner, Divine",
-			fr = "Bannière, Divine",
+			fr = "Étendard Divin",
 		},
 		Description = {
 			en =
@@ -644,7 +644,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Banner_Resistance",
 		Name = {
 			en = "Banner, Resistance",
-			fr = "Bannière, Résistance",
+			fr = "Étendard de la Résistance",
 		},
 		Description = {
 			en =
@@ -695,7 +695,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Pillars_Divine",
 		Name = {
 			en = "Pillars, Divine",
-			fr = "Piliers, Divins",
+			fr = "Piliers Divins",
 		},
 		Description = {
 			en =
@@ -735,7 +735,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Pillars_Gilded",
 		Name = {
 			en = "Pillars, Gilded",
-			fr = "Piliers, Dorés",
+			fr = "Piliers Dorés",
 		},
 		Description = {
 			en =
@@ -775,7 +775,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Pillars_Serpentine",
 		Name = {
 			en = "Pillars, Serpentine",
-			fr = "Piliers, Serpentins",
+			fr = "Piliers Serpentins",
 		},
 		Description = {
 			en =
@@ -811,7 +811,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Pillars_Deathly",
 		Name = {
 			en = "Pillars, Deathly",
-			fr = "Piliers, Mortuaires",
+			fr = "Piliers Mortuaires",
 		},
 		Description = {
 			en =
@@ -851,7 +851,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Pillars_Infinite",
 		Name = {
 			en = "Pillars, Infinite",
-			fr = "Piliers, Infinis",
+			fr = "Piliers Infinis",
 		},
 		Description = {
 			en =
@@ -895,7 +895,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Rug_Ancient",
 		Name = {
 			en = "Rug, Ancient",
-			fr = "Tapis, Antique",
+			fr = "Tapis Antique",
 		},
 		Description = {
 			en =
@@ -930,7 +930,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Rug_Heroic",
 		Name = {
 			en = "Rug, Heroic",
-			fr = "Tapis, Héroïque",
+			fr = "Tapis Héroïque",
 		},
 		Description = {
 			en =
@@ -973,7 +973,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_War_Table_Heroic",
 		Name = {
 			en = "War Table, Heroic",
-			fr = "Table de guerre, Héroïque",
+			fr = "Table de guerre Héroïque",
 		},
 		Description = {
 			en =
@@ -1017,7 +1017,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Lantern_Infernal",
 		Name = {
 			en = "Lanterns, Infernal",
-			fr = "Lanternes, Infernales",
+			fr = "Lanternes Infernales",
 		},
 		Description = {
 			en =
@@ -1066,7 +1066,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Lantern_Gilded",
 		Name = {
 			en = "Lanterns, Gilded",
-			fr = "Lanternes, Dorées",
+			fr = "Lanternes Dorées",
 		},
 		Description = {
 			en =
@@ -1109,7 +1109,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Cauldron_Infernal",
 		Name = {
 			en = "Cauldron, Infernal",
-			fr = "Chaudron, Infernal",
+			fr = "Chaudron Infernal",
 		},
 		Description = {
 			en =
@@ -1162,7 +1162,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Cauldron_Infinite",
 		Name = {
 			en = "Cauldron, Infinite",
-			fr = "Chaudron, Infini",
+			fr = "Chaudron Infini",
 		},
 		Description = {
 			en =
@@ -1222,7 +1222,7 @@ local mainHubAreaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_HypnosPedestal_Coned",
 		Name = {
 			en = "Pillarets, Coned",
-			fr = "Pilastre, Coniques",
+			fr = "Petits Piliers Coniques",
 		},
 		Description = {
 			en =
@@ -1277,7 +1277,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaChairs_Infernal",
 		Name = {
 			en = "Benches, Infernal",
-			fr = "Bancs, Infernaux",
+			fr = "Banc Infernal",
 		},
 		Description = {
 			en =
@@ -1320,7 +1320,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaChairs_Springtime",
 		Name = {
 			en = "Benches, Springtime",
-			fr = "Bancs, Printaniers",
+			fr = "Banc Printanier",
 		},
 		Description = {
 			en =
@@ -1366,7 +1366,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaTables_Infernal",
 		Name = {
 			en = "Tables, Infernal",
-			fr = "Tables, Infernales",
+			fr = "Tables Infernales",
 		},
 		Description = {
 			en =
@@ -1409,7 +1409,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaTables_Springtime",
 		Name = {
 			en = "Tables, Springtime",
-			fr = "Tables, Printanières",
+			fr = "Tables Printanières",
 		},
 		Description = {
 			en =
@@ -1454,7 +1454,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaCauldron_Royal",
 		Name = {
 			en = "Cooking-Pot, Royal",
-			fr = "Marmite, Royale",
+			fr = "Marmite Royale",
 		},
 		Description = {
 			en =
@@ -1503,7 +1503,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaStarMosaic_Furious",
 		Name = {
 			en = "Mosaic, Furious",
-			fr = "Mosaïque, Furieuse",
+			fr = "Mosaïque Furieuse",
 		},
 		Description = {
 			en =
@@ -1549,7 +1549,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaStarMosaic_Gilded",
 		Name = {
 			en = "Mosaic, Gilded",
-			fr = "Mosaïque, Dorée",
+			fr = "Mosaïque Dorée",
 		},
 		Description = {
 			en =
@@ -1594,7 +1594,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaStarMosaic_Royal",
 		Name = {
 			en = "Mosaic, Royal",
-			fr = "Mosaïque, Royale",
+			fr = "Mosaïque Royale",
 		},
 		Description = {
 			en =
@@ -1641,7 +1641,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_MainHangingTassles_Deathly",
 		Name = {
 			en = "Tassels, Deathly",
-			fr = "Pompons, Mortuaires",
+			fr = "Guirlandes Mortuaires",
 		},
 		Description = {
 			en =
@@ -1690,7 +1690,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_Cosmetic_MainHangingRope_Deathly",
 		Name = {
 			en = "Rope, Deathly",
-			fr = "Corde, Mortuaire",
+			fr = "Cordes Mortuaires",
 		},
 		Description = {
 			en =
@@ -1740,7 +1740,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaMusicStage_Serpentine",
 		Name = {
 			en = "Stage, Serpentine",
-			fr = "Estrade, Serpentine",
+			fr = "Estrade Serpentine",
 		},
 		Description = {
 			en =
@@ -1792,7 +1792,7 @@ local tavernaCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TavernaMusicStage_Royal",
 		Name = {
 			en = "Stage, Royal",
-			fr = "Estrade, Royale",
+			fr = "Estrade Royale",
 		},
 		Description = {
 			en =
@@ -1857,7 +1857,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Achilles",
 		Name = {
 			en = "Charm, Antos",
-			fr = "Breloque, Antos",
+			fr = "Talismans d'Antos",
 		},
 		Description = {
 			en =
@@ -1905,7 +1905,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Dusa",
 		Name = {
 			en = "Charm, Fidi",
-			fr = "Breloque, Fidi",
+			fr = "Talismans de Fidi",
 		},
 		Description = {
 			en =
@@ -1945,7 +1945,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Megaera",
 		Name = {
 			en = "Charm, Battie",
-			fr = "Breloque, Battie",
+			fr = "Talismans de Battie",
 		},
 		Description = {
 			en =
@@ -1987,7 +1987,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Sisyphus",
 		Name = {
 			en = "Charm, Shady",
-			fr = "Breloque, Shady",
+			fr = "Talismans de Shady",
 		},
 		Description = {
 			en =
@@ -2028,7 +2028,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Skelly",
 		Name = {
 			en = "Charm, Rib",
-			fr = "Breloque, Rib",
+			fr = "Talismans de Rib",
 		},
 		Description = {
 			en =
@@ -2105,7 +2105,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Thanatos",
 		Name = {
 			en = "Charm, Mort",
-			fr = "Breloque, Mort",
+			fr = "Talismans de la Mort",
 		},
 		Description = {
 			en =
@@ -2152,7 +2152,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_ExitCharm_Cerberus",
 		Name = {
 			en = "Charm, Solo",
-			fr = "Breloque, Solo",
+			fr = "Talismans de Solo",
 		},
 		Description = {
 			en =
@@ -2196,7 +2196,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_SkellyFloor_Fancy",
 		Name = {
 			en = "Dais, Fancy",
-			fr = "Piédestal, Raffiné",
+			fr = "Dalle Raffinée",
 		},
 		Description = {
 			en =
@@ -2244,7 +2244,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_SkellyFloor_Olympian",
 		Name = {
 			en = "Dais, Olympian",
-			fr = "Piédestal, Olympien",
+			fr = "Dalle Olympienne",
 		},
 		Description = {
 			en =
@@ -2288,7 +2288,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_SkellyFloor_Psychopomp",
 		Name = {
 			en = "Dais, Psychopomp",
-			fr = "Piédestal, Psychopompe",
+			fr = "Dalle Psychopompe",
 		},
 		Description = {
 			en =
@@ -2338,7 +2338,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TrainingDummy_Scarecrow",
 		Name = {
 			en = "Effigies, Scary",
-			fr = "Effigies, Effrayantes",
+			fr = "Mannequins Effrayants",
 		},
 		Description = {
 			en =
@@ -2390,7 +2390,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_TrainingDummy_Psychopomp",
 		Name = {
 			en = "Effigies, Psychopomp",
-			fr = "Effigies, Psychopompes",
+			fr = "Mannequins Psychopompes",
 		},
 		Description = {
 			en =
@@ -2448,7 +2448,7 @@ local preRunCosmetics = {
 		Id = _PLUGIN.guid .. "." .. "Cosmetic_SkellyStatue_Daemonic",
 		Name = {
 			en = "Statue, Daemonic",
-			fr = "Statue, Démoniaque",
+			fr = "Statue Démoniaque",
 		},
 		Description = {
 			en =
@@ -2515,7 +2515,7 @@ CosmeticsAPI.RegisterCardBackPack({
 	Id = _PLUGIN.guid .. "." .. "Cosmetic_Arcana_Biomes",
 	Name = {
 		en = "Arcana, Far-Travelled",
-		fr = "Arcanes, Grand Voyage",
+		fr = "Arcanes du Grand Voyage",
 	},
 	Description = {
 		en =
@@ -2600,7 +2600,7 @@ CosmeticsAPI.RegisterCardBackPack({
 	Id = _PLUGIN.guid .. "." .. "Cosmetic_Arcana_Bosses",
 	Name = {
 		en = "Arcana, Antagonistic",
-		fr = "Arcanes, Antagonistes",
+		fr = "Arcanes Antagonistes",
 	},
 	Description = {
 		en =
@@ -2672,7 +2672,7 @@ CosmeticsAPI.RegisterCardBackPack({
 	Id = _PLUGIN.guid .. "." .. "Cosmetic_Arcana_Gods",
 	Name = {
 		en = "Arcana, Olympian",
-		fr = "Arcanes, Olympiens",
+		fr = "Arcanes Olympiennes",
 	},
 	Description = {
 		en =
