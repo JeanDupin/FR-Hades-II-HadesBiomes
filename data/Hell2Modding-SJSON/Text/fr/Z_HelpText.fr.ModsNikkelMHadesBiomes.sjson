@@ -859,7 +859,7 @@
     // #region Asphodel
     {
       Id = "ModsNikkelMHadesBiomes_SeedAsphodel"
-      DisplayName = "Graines de Fleur de Cendre"
+      DisplayName = "Graines de Cendre"
       Description =
       "En {$GardenData.Seeds.ModsNikkelMHadesBiomes_SeedAsphodel.GrowTimeMax}{!Icons.Clock}, deviennent de chaleureux pétales."
     }
@@ -870,7 +870,7 @@
     {
       Id = "ModsNikkelMHadesBiomes_SeedAsphodel_Icon"
       InheritFrom = "ModsNikkelMHadesBiomes_SeedAsphodel"
-      DisplayName = "{!Icons.ModsNikkelMHadesBiomes_SeedAsphodel_Icon} Graines de Fleur de Cendre"
+      DisplayName = "{!Icons.ModsNikkelMHadesBiomes_SeedAsphodel_Icon} Graines de Cendre"
     }
     {
       Id = "ModsNikkelMHadesBiomes_SeedAsphodel_Details"
@@ -885,7 +885,7 @@
     // #region Elysium
     {
       Id = "ModsNikkelMHadesBiomes_SeedElysium"
-      DisplayName = "Bourgeons de Quartz Rose"
+      DisplayName = "Bourgeons de Quartz"
       Description =
       "En {$GardenData.Seeds.ModsNikkelMHadesBiomes_SeedElysium.GrowTimeMax}{!Icons.Clock}, deviennent une beauté figée."
     }
@@ -896,7 +896,7 @@
     {
       Id = "ModsNikkelMHadesBiomes_SeedElysium_Icon"
       InheritFrom = "ModsNikkelMHadesBiomes_SeedElysium"
-      DisplayName = "{!Icons.ModsNikkelMHadesBiomes_SeedElysium_Icon} Bourgeons de Quartz Rose"
+      DisplayName = "{!Icons.ModsNikkelMHadesBiomes_SeedElysium_Icon} Bourgeons de Quartz"
     }
     {
       Id = "ModsNikkelMHadesBiomes_SeedElysium_Details"
