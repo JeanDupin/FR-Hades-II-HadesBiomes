@@ -54,7 +54,8 @@ local addProjectiles = {
 	ModsNikkelMHadesBiomes_TheseusHeraBolt = game.DeepCopyTable(game.ProjectileData.DevotionHera),
 	ModsNikkelMHadesBiomes_TheseusHeraBoltPassive = game.DeepCopyTable(game.ProjectileData.DevotionHera),
 	ModsNikkelMHadesBiomes_TheseusHestiaBall = game.DeepCopyTable(game.ProjectileData.DevotionHestia),
-	ModsNikkelMHadesBiomes_TheseusHephaestusSlam = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),	ModsNikkelMHadesBiomes_TheseusHephaestusSlamPassive = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),
+	ModsNikkelMHadesBiomes_TheseusHephaestusSlam = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),
+	ModsNikkelMHadesBiomes_TheseusHephaestusSlamPassive = game.DeepCopyTable(game.ProjectileData.DevotionHephaestus),
 	-- #endregion
 }
 

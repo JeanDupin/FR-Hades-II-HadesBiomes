@@ -202,6 +202,87 @@ mod.HadesFxAnimationModifications = {
 	-- #endregion
 }
 
+mod.HadesFxAnimationAdditions = {
+	-- #region ELYSIUM
+	-- #region Theseus Wrath recolours
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearSwipeGlowApollo",
+		InheritFrom = "SpearSwipeGlow",
+		StartRed = 1,
+		StartGreen = 0.85,
+		StartBlue = 0.3,
+		EndRed = 0.999,
+		EndGreen = 0.45,
+		EndBlue = 0.05,
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearSwipe360BApollo",
+		InheritFrom = "SpearSwipe360B",
+		ChildAnimation = "ModsNikkelMHadesBiomes_SpearSwipeGlowApollo",
+		StartRed = 1,
+		StartGreen = 0.85,
+		StartBlue = 0.3,
+		EndRed = 0.999,
+		EndGreen = 0.45,
+		EndBlue = 0.05,
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearSwipe360Apollo",
+		InheritFrom = "SpearSwipe360",
+		ChildAnimation = "ModsNikkelMHadesBiomes_SpearSwipe360BApollo",
+		CreateAnimation = "QuickFlashYellow",
+		StartRed = 1,
+		StartGreen = 0.85,
+		StartBlue = 0.3,
+		EndRed = 0.999,
+		EndGreen = 0.45,
+		EndBlue = 0.05,
+		ClearSlides = true,
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_TheseusSpearSwipeApollo",
+		InheritFrom = "ModsNikkelMHadesBiomes_SpearSwipe360Apollo",
+		AngleChangeAcceleration = -150.0,
+		PlaySpeed = 90.0,
+		FlipHorizontal = true,
+		RotationSpeed = 90.0,
+		PostRotateScaleY = 0.6,
+		Scale = 2.1,
+		ScaleFromOwner = "Ignore",
+		CreateAnimations = {
+			{ Name = "QuickFlashEnemy" },
+		},
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearThrowProjectileGlowApollo",
+		InheritFrom = "SpearThrowProjectileGlow",
+		ChildAnimation = "QuickFlashYellow",
+		StartRed = 1,
+		StartGreen = 0.85,
+		StartBlue = 0.3,
+		EndRed = 0.999,
+		EndGreen = 0.45,
+		EndBlue = 0.05,
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearThrowProjectileApollo",
+		InheritFrom = "SpearThrowProjectile",
+		CreateAnimation = "ModsNikkelMHadesBiomes_SpearThrowProjectileGlowApollo",
+		StartRed = 1,
+		StartGreen = 0.85,
+		StartBlue = 0.3,
+		EndRed = 0.999,
+		EndGreen = 0.45,
+		EndBlue = 0.05,
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_SpearThrowProjectileTheseusApollo",
+		InheritFrom = "ModsNikkelMHadesBiomes_SpearThrowProjectileApollo",
+	},
+	-- #endregion
+	-- #endregion
+}
+
 -- Duplicate Fx animation, saved here due to the animations not being hooked, but copied directly
 mod.HadesFxAnimationDuplicates = {
 	["GroupChange"] = true,

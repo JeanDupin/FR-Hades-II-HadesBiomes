@@ -470,6 +470,25 @@ local hadesProjectilesModifications = {
 }
 
 local addProjectiles = {
+	-- #region ELYSIUM - Theseus god spear recolours
+	{
+		Name = "ModsNikkelMHadesBiomes_TheseusSpearSpinApollo",
+		InheritFrom = "TheseusSpearSpin",
+		DetonateGraphic = "ModsNikkelMHadesBiomes_TheseusSpearSwipeApollo",
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_TheseusSpearThrowApollo",
+		InheritFrom = "TheseusSpearThrow",
+		Thing = { Graphic = "ModsNikkelMHadesBiomes_SpearThrowProjectileTheseusApollo" },
+	},
+	{
+		Name = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo",
+		InheritFrom = "TheseusSpearThrowReturn",
+		Thing = { Graphic = "ModsNikkelMHadesBiomes_SpearThrowProjectileTheseusApollo" },
+	},
+	-- #endregion
+
+	-- #region STYX
 	{
 		Name = "HadesCrawlerRush",
 		InheritFrom = "CrawlerRush",
@@ -548,6 +567,7 @@ local addProjectiles = {
 			},
 		},
 	},
+	-- #endregion
 }
 
 local renamedProjectileModifications = {}

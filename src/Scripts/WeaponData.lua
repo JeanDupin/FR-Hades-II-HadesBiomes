@@ -436,22 +436,22 @@ local weaponReplacements = {
 			-- Two simultaneous half-circles starting from the top and bottom, with a single centered projectile firing halfway through the attack
 			AttackSlots = {
 				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 112.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 292.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 292.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 135,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 315,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 315,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 157.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 337.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 337.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 180,   OffsetDistance = 750, OffsetScaleY = 0.48 },
 				{ Angle = 0,     OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 0,     OffsetDistance = 0,   OffsetScaleY = 0.48, AnchorAngleOffset = 0, PauseDuration = 0.12 },
+				{ Angle = 0,     OffsetDistance = 0,   OffsetScaleY = 0.48, AnchorAngleOffset = 0, PauseDuration = 0.09 },
 				{ Angle = 202.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 22.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 22.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 225,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 45,    OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 45,    OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 247.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 67.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.12 },
+				{ Angle = 67.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48 },
 				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
 			},
@@ -578,6 +578,37 @@ local weaponReplacements = {
 				{ Angle = 252,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
 				{ Angle = 324,   OffsetDistance = 450,  OffsetScaleY = 0.48, UseMapObjectId = 525346, AnchorAngleOffset = 0 },
 			},
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowApollo = {
+		InheritFrom = { "TheseusSpearThrow" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowApollo",
+			WaitUntilProjectileDeath = "ModsNikkelMHadesBiomes_TheseusSpearThrowApollo",
+			ChainedWeapon = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo",
+			PostAttackDumbFireWeapons = { "ModsNikkelMHadesBiomes_TheseusSpearApolloPillar" },
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo = {
+		InheritFrom = { "TheseusSpearThrowReturn" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearSpinApollo = {
+		InheritFrom = { "TheseusSpearSpin" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearSpinApollo",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearApolloPillar = {
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusApolloBoltPassive",
+			TargetName = "TheseusSpearReturnPoint",
+			PreAttackDuration = 0.2,
+			PostAttackDuration = 0.0,
+			AIAttackDistance = 9999,
+			AIBufferDistance = 9999,
 		},
 	},
 	-- #endregion
@@ -1722,6 +1753,10 @@ local weaponModifications = {
 	TheseusSpearThrow = {
 		AIData = {
 			ImmuneToProjectileSlow = true,
+			DeepInheritance = true,
+		},
+		GodUpgradeWeaponSwap = {
+			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowApollo",
 		},
 	},
 	TheseusSpearThrowReturn = {
@@ -1732,6 +1767,10 @@ local weaponModifications = {
 			ModsNikkelMHadesBiomesFireAtSelf = true,
 			ModsNikkelMHadesBiomesFireFromObstacle = "TheseusSpearReturnPoint",
 			ModsNikkelMHadesBiomesDestroyObstacleOnFire = "TheseusSpearReturnPoint",
+			DeepInheritance = true,
+		},
+		GodUpgradeWeaponSwap = {
+			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo",
 		},
 	},
 	TheseusSpearSpin = {
@@ -1744,6 +1783,10 @@ local weaponModifications = {
 			AITrackTargetDuringCharge = false,
 			FireRotationDampening = 0.001,
 			ImmuneToProjectileSlow = true,
+			DeepInheritance = true,
+		},
+		GodUpgradeWeaponSwap = {
+			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearSpinApollo",
 		},
 	},
 	-- Has it's properties in the root instead of in AIData

@@ -29,7 +29,7 @@
     {
       Name = "ModsNikkelMHadesBiomes_TheseusApolloBoltPassive"
       InheritFrom = "DevotionApollo"
-      TotalFuse = 0.45
+      TotalFuse = 1.05
     }
     {
       Name = "ModsNikkelMHadesBiomes_TheseusHeraBolt"
