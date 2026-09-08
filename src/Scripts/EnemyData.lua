@@ -2816,6 +2816,24 @@ local enemyModifications = {
 		},
 		ModsNikkelMHadesBiomesEffectVfxOffsetZ = 160,
 	},
+	ModsNikkelMHadesBiomes_HestiaDevotionTracker = {
+		InheritFrom = { "HestiaUpgradeRoomWeapon" },
+		WakeUpDelay = 0.25,
+		WeaponOptions = { "ModsNikkelMHadesBiomes_DevotionHestia" },
+	},
+	ModsNikkelMHadesBiomes_HestiaDevotionWanderer = {
+		InheritFrom = { "HestiaUpgradeRoomWeapon" },
+		WakeUpDelay = "nil",
+		WakeUpDelayMin = 0.4,
+		WakeUpDelayMax = 1.3,
+		WeaponOptions = { "ModsNikkelMHadesBiomes_DevotionHestia" },
+		DefaultAIData = {
+			-- Don't track/target the player directly, move more randomly
+			RandomTargetAngle = true,
+			TargetOffsetDistanceMin = 150,
+			TargetOffsetDistanceMax = 400,
+		},
+	},
 	-- #endregion
 	-- #endregion
 

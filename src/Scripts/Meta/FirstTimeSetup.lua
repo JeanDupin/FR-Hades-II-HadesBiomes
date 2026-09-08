@@ -5,7 +5,7 @@ local function copyFile(src, dest)
 		return true
 	end
 
-	mod.DebugPrint("Copying file " .. src .. " to " .. dest, 4)
+	mod.DebugPrint("[Install] Copying file " .. src .. " to " .. dest, 4)
 	local copied, copyError = rom.path.copy_file(src, dest)
 	if not copied then
 		mod.DebugPrint("Could not copy " .. src .. " to " .. dest .. ": " .. tostring(copyError), 1)
@@ -18,7 +18,7 @@ end
 
 local function copyFiles(fileMappings, srcBasePath, destBasePath, extension, nameHint, usePluginData, destUsePluginData)
 	nameHint = nameHint or ""
-	mod.DebugPrint("Copying " .. nameHint .. extension .. " files...", 3)
+	mod.DebugPrint("[Install] Copying " .. nameHint .. extension .. " files...", 3)
 	for key, value in pairs(fileMappings) do
 		local src, dest
 		if type(key) == "number" then
@@ -68,7 +68,7 @@ local function removeDeprecatedAnimationProperties(animationsFile)
 end
 
 local function applyModificationsAndCopySjsonFiles(fileMappings, srcBasePath, modifications)
-	mod.DebugPrint("Copying .sjson files...", 3)
+	mod.DebugPrint("[Install] Copying .sjson files...", 3)
 	for key, value in pairs(fileMappings) do
 		local src, dest
 		if type(key) == "number" then
@@ -86,7 +86,7 @@ local function applyModificationsAndCopySjsonFiles(fileMappings, srcBasePath, mo
 			local fileData = mod.DecodeSjsonFile(srcPath)
 			mod.ApplyNestedSjsonModifications(fileData.Animations, modifications[src] or {})
 			removeDeprecatedAnimationProperties(fileData)
-			mod.DebugPrint("Copying file " .. srcPath .. " to " .. sjsonDataRelativePath, 4)
+			mod.DebugPrint("[Install] Copying file " .. srcPath .. " to " .. sjsonDataRelativePath, 4)
 			mod.WriteSjsonData(sjsonDataRelativePath, fileData)
 		else
 			mod.DebugPrint("File already exists and will not be overwritten: " .. sjsonDataRelativePath, 2)
@@ -330,7 +330,7 @@ local function copyHadesTextFiles()
 				if rom.path.exists(rom.path.combine(_PLUGIN.sjson_data_path, sjsonDataRelativePath)) then
 					mod.DebugPrint("File already exists and will not be overwritten: " .. sjsonDataRelativePath, 2)
 				else
-					mod.DebugPrint("Copying " .. fileName .. " entries for language: " .. language, 4)
+					mod.DebugPrint("[Install] Copying " .. fileName .. " entries for language: " .. language, 4)
 
 					local hadesFile = rom.path.combine(mod.hadesGameFolder,
 						"Content\\Game\\Text\\" .. language .. "\\" .. fileName .. "." .. language .. ".sjson")
@@ -368,7 +368,7 @@ local function copyHadesNPCTexts()
 	for _, language in ipairs(mod.HelpTextLanguages) do
 		for fileName, allowedSpeakers in pairs(mod.NPCTextFileNames) do
 			if not (mod.HadesHelpTextFileSkipMap[fileName] and mod.HadesHelpTextFileSkipMap[fileName][language]) then
-				mod.DebugPrint("Copying " .. fileName .. " files for language: " .. language, 4)
+				mod.DebugPrint("[Install] Copying " .. fileName .. " files for language: " .. language, 4)
 
 				local sjsonDataRelativePath = "Text\\" ..
 						language .. "\\Z_" .. fileName .. "ModsNikkelMHadesBiomes." .. language .. ".sjson"
