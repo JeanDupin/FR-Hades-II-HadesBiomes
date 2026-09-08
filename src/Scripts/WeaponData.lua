@@ -431,29 +431,21 @@ local weaponReplacements = {
 			FireInterval = 3.0,
 			FireTicks = 1,
 			FireCooldown = 0.1,
-			AttackSlotsPerTick = 19,
+			AttackSlotsPerTick = 11,
 			AttackSlotInterval = 0,
 			-- Two simultaneous half-circles starting from the top and bottom, with a single centered projectile firing halfway through the attack
 			AttackSlots = {
-				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 112.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 292.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 135,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 315,   OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 157.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 337.5, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 180,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 0,     OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 0,     OffsetDistance = 0,   OffsetScaleY = 0.48, AnchorAngleOffset = 0, PauseDuration = 0.09 },
-				{ Angle = 202.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 22.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 225,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 45,    OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 247.5, OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 67.5,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
-				{ Angle = 270,   OffsetDistance = 750, OffsetScaleY = 0.48 },
-				{ Angle = 90,    OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 90,  OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 270, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
+				{ Angle = 126, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 306, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
+				{ Angle = 162, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 342, OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
+				{ Angle = 0,   OffsetDistance = 0,   OffsetScaleY = 0.48, AnchorAngleOffset = 0, PauseDuration = 0.09 },
+				{ Angle = 198, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 18,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
+				{ Angle = 234, OffsetDistance = 750, OffsetScaleY = 0.48 },
+				{ Angle = 54,  OffsetDistance = 750, OffsetScaleY = 0.48, PauseDuration = 0.09 },
 			},
 		},
 	},
@@ -527,8 +519,7 @@ local weaponReplacements = {
 			FireCooldown = 0.25,
 			CreateOwnTargetFromOriginalTarget = true,
 			UseTargetAngle = true,
-			-- To spawn in front of the player in current walking direction
-			TargetOffsetDistance = 300,
+			TargetOffsetDistance = 150,
 			WrathVoiceLines = {
 				Queue = "Interrupt",
 				[1] = game.GlobalVoiceLines.TheseusWrathActivationVoiceLines,
@@ -601,6 +592,68 @@ local weaponReplacements = {
 			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearSpinApollo",
 		},
 	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowHera = {
+		InheritFrom = { "TheseusSpearThrow" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowHera",
+			WaitUntilProjectileDeath = "ModsNikkelMHadesBiomes_TheseusSpearThrowHera",
+			ChainedWeapon = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHera",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHera = {
+		InheritFrom = { "TheseusSpearThrowReturn" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHera",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearSpinHera = {
+		InheritFrom = { "TheseusSpearSpin" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearSpinHera",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowHestia = {
+		InheritFrom = { "TheseusSpearThrow" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowHestia",
+			WaitUntilProjectileDeath = "ModsNikkelMHadesBiomes_TheseusSpearThrowHestia",
+			ChainedWeapon = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHestia",
+			PostAttackDumbFireWeapons = { "ModsNikkelMHadesBiomes_TheseusSpearHestiaFire" },
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHestia = {
+		InheritFrom = { "TheseusSpearThrowReturn" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHestia",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearSpinHestia = {
+		InheritFrom = { "TheseusSpearSpin" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearSpinHestia",
+			DumbFireWeapons = { "ModsNikkelMHadesBiomes_TheseusSpearHestiaFireRing" },
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowHephaestus = {
+		InheritFrom = { "TheseusSpearThrow" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowHephaestus",
+			WaitUntilProjectileDeath = "ModsNikkelMHadesBiomes_TheseusSpearThrowHephaestus",
+			ChainedWeapon = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHephaestus",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHephaestus = {
+		InheritFrom = { "TheseusSpearThrowReturn" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHephaestus",
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearSpinHephaestus = {
+		InheritFrom = { "TheseusSpearSpin" },
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusSpearSpinHephaestus",
+		},
+	},
 	ModsNikkelMHadesBiomes_TheseusSpearApolloPillar = {
 		AIData = {
 			ProjectileName = "ModsNikkelMHadesBiomes_TheseusApolloBoltPassive",
@@ -609,6 +662,35 @@ local weaponReplacements = {
 			PostAttackDuration = 0.0,
 			AIAttackDistance = 9999,
 			AIBufferDistance = 9999,
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearHestiaFire = {
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHestiaFire",
+			TargetName = "TheseusSpearReturnPoint",
+			PreAttackDuration = 0.2,
+			PostAttackDuration = 0.0,
+			AIAttackDistance = 9999,
+			AIBufferDistance = 9999,
+		},
+	},
+	ModsNikkelMHadesBiomes_TheseusSpearHestiaFireRing = {
+		AIData = {
+			ProjectileName = "ModsNikkelMHadesBiomes_TheseusHestiaFire",
+			PreAttackDuration = 0.0,
+			PostAttackDuration = 0.0,
+			AIAttackDistance = 9999,
+			AIBufferDistance = 9999,
+			FireTicks = 1,
+			AttackSlotsPerTick = 5,
+			AttackSlotInterval = 0.05,
+			AttackSlots = {
+				{ UseRandomAngle = true, OffsetDistanceMin = 150, OffsetDistanceMax = 320, OffsetScaleY = 0.48, OffsetFromAttacker = true, AnchorAngleOffset = 0 },
+				{ UseRandomAngle = true, OffsetDistanceMin = 150, OffsetDistanceMax = 320, OffsetScaleY = 0.48, OffsetFromAttacker = true, AnchorAngleOffset = 0 },
+				{ UseRandomAngle = true, OffsetDistanceMin = 150, OffsetDistanceMax = 320, OffsetScaleY = 0.48, OffsetFromAttacker = true, AnchorAngleOffset = 0 },
+				{ UseRandomAngle = true, OffsetDistanceMin = 150, OffsetDistanceMax = 320, OffsetScaleY = 0.48, OffsetFromAttacker = true, AnchorAngleOffset = 0 },
+				{ UseRandomAngle = true, OffsetDistanceMin = 150, OffsetDistanceMax = 320, OffsetScaleY = 0.48, OffsetFromAttacker = true, AnchorAngleOffset = 0 },
+			},
 		},
 	},
 	-- #endregion
@@ -1757,6 +1839,9 @@ local weaponModifications = {
 		},
 		GodUpgradeWeaponSwap = {
 			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowApollo",
+			HeraUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowHera",
+			HestiaUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowHestia",
+			HephaestusUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowHephaestus",
 		},
 	},
 	TheseusSpearThrowReturn = {
@@ -1771,6 +1856,9 @@ local weaponModifications = {
 		},
 		GodUpgradeWeaponSwap = {
 			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnApollo",
+			HeraUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHera",
+			HestiaUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHestia",
+			HephaestusUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearThrowReturnHephaestus",
 		},
 	},
 	TheseusSpearSpin = {
@@ -1787,6 +1875,9 @@ local weaponModifications = {
 		},
 		GodUpgradeWeaponSwap = {
 			ApolloUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearSpinApollo",
+			HeraUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearSpinHera",
+			HestiaUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearSpinHestia",
+			HephaestusUpgrade = "ModsNikkelMHadesBiomes_TheseusSpearSpinHephaestus",
 		},
 	},
 	-- Has it's properties in the root instead of in AIData

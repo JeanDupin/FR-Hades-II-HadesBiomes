@@ -29,7 +29,8 @@
     {
       Name = "ModsNikkelMHadesBiomes_TheseusApolloBoltPassive"
       InheritFrom = "DevotionApollo"
-      TotalFuse = 1.05
+      // Three detonations
+      TotalFuse = 0.45
     }
     {
       Name = "ModsNikkelMHadesBiomes_TheseusHeraBolt"

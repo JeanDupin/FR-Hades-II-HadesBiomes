@@ -84,10 +84,10 @@ end
 
 function mod.RemoveFile(filePath)
 	if rom.path.exists(filePath) then
-		mod.DebugPrint("Removing file: " .. filePath, 4)
+		mod.DebugPrint("[Uninstall] Removing file: " .. filePath, 4)
 		local success, err = os.remove(filePath)
 		if not success then
-			mod.DebugPrint("Error removing file: " .. err, 1)
+			mod.DebugPrint("[Uninstall] Error removing file: " .. err, 1)
 		end
 	end
 end
