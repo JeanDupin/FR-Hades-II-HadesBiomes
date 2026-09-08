@@ -12,6 +12,7 @@
 - Fixed: Goddess Mode does not reduce boss health. Enabling it will now reduce boss health by about 25% of the difference between the health they had in Hades and the health they have with Goddess Mode disabled.
 
 Other fixes and improvements:
+- Added French localization (by [@JeanDupin](https://github.com/JeanDupin)).
 - Added new speedrunning settings to disable the Barge of Death, Asterius and Tiny Vermin miniboss encounters, either all at once or individually.
 - Added an on-screen indicator that is shown while any of the speedrunning settings are enabled.
 - Added a new Minor Prophecy unlocked by talking to Poseidon in the Nightmare Realm.
